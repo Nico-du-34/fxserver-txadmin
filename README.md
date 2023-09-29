@@ -1,10 +1,15 @@
+![dev](https://github.com/Nico-du-34/fxserver-txadmin/assets/140889974/48e459cf-6012-4a64-9171-fd64c051f75b)
+
 # fxserver-txadmin
+
  Docker fivem artifact ussing txadmin
 
 
 # Build image
-docker-compose up --build
 
+```bash
+docker-compose up --build
+```
 
 # DB Host
 
@@ -19,6 +24,7 @@ ou
 
 ```bash
 ifconfig (sur Linux ou macOS)
+
 ```
 Trouvez la section de votre interface réseau (par exemple, eth0, en0, wlan0) et notez l'adresse IP. Utilisez cette adresse IP comme valeur pour DB_HOST.
 
