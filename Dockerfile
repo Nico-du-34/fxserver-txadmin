@@ -7,10 +7,4 @@ RUN wget https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/6721
 
 RUN tar -xvf fx.tar.xz
 
-# WORKDIR /txData
-# COPY clone-repo.sh /txData
-# RUN chmod +x /txData/clone-repo.sh
-
-# ENTRYPOINT ["clone-repo.sh"]
-
 CMD ["./run.sh"]
