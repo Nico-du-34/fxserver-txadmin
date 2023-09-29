@@ -8,24 +8,8 @@ services:
       - "30120:30120/tcp"
       - "40120:40120/tcp"
     environment:
-      - DB_HOST=192.168.80.1
+      - DB_HOST=ip
       - DB_PORT=3306
-      - DB_DATABASE=qbcore
-      - DB_USERNAME=admin
-
-    # depends_on:
-    #   - mysql
-
-#   mysql:
-#     image: mysql:latest
-#     container_name: mysql_container
-#     environment:
-#       MYSQL_ROOT_PASSWORD: rootnklife
-#       MYSQL_DATABASE: qbcore
-#       MYSQL_USER: nklife
-#       MYSQL_PASSWORD: nklife
-#     networks:
-#       - fivem_network
-
-# networks:
-#   fivem_network:
+      - DB_DATABASE=database_name
+      - DB_USERNAME=username_not_root
+      - DB_PASSWORD=password_db
